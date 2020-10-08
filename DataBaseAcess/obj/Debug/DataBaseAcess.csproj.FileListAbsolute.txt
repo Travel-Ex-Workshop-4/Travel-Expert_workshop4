@@ -1,0 +1,12 @@
+C:\Users\markf\source\repos\TravelExpertEntity\DataBaseAcess\bin\Debug\DataBaseAcess.dll
+C:\Users\markf\source\repos\TravelExpertEntity\DataBaseAcess\bin\Debug\DataBaseAcess.pdb
+C:\Users\markf\source\repos\TravelExpertEntity\DataBaseAcess\bin\Debug\TravelExpertEntities.dll
+C:\Users\markf\source\repos\TravelExpertEntity\DataBaseAcess\bin\Debug\EntityFramework.dll
+C:\Users\markf\source\repos\TravelExpertEntity\DataBaseAcess\bin\Debug\TravelExpertEntities.pdb
+C:\Users\markf\source\repos\TravelExpertEntity\DataBaseAcess\bin\Debug\TravelExpertEntities.dll.config
+C:\Users\markf\source\repos\TravelExpertEntity\DataBaseAcess\bin\Debug\EntityFramework.xml
+C:\Users\markf\source\repos\TravelExpertEntity\DataBaseAcess\obj\Debug\DataBaseAcess.csprojAssemblyReference.cache
+C:\Users\markf\source\repos\TravelExpertEntity\DataBaseAcess\obj\Debug\DataBaseAcess.csproj.CoreCompileInputs.cache
+C:\Users\markf\source\repos\TravelExpertEntity\DataBaseAcess\obj\Debug\DataBaseAcess.csproj.CopyComplete
+C:\Users\markf\source\repos\TravelExpertEntity\DataBaseAcess\obj\Debug\DataBaseAcess.dll
+C:\Users\markf\source\repos\TravelExpertEntity\DataBaseAcess\obj\Debug\DataBaseAcess.pdb

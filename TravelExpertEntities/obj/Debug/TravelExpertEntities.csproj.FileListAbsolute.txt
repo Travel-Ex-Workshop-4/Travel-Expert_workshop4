@@ -1,0 +1,11 @@
+C:\Users\markf\source\repos\TravelExpertEntity\TravelExpertEntities\bin\Debug\TravelExpertEntities.dll.config
+C:\Users\markf\source\repos\TravelExpertEntity\TravelExpertEntities\bin\Debug\TravelExpertEntities.dll
+C:\Users\markf\source\repos\TravelExpertEntity\TravelExpertEntities\bin\Debug\TravelExpertEntities.pdb
+C:\Users\markf\source\repos\TravelExpertEntity\TravelExpertEntities\bin\Debug\EntityFramework.dll
+C:\Users\markf\source\repos\TravelExpertEntity\TravelExpertEntities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\markf\source\repos\TravelExpertEntity\TravelExpertEntities\bin\Debug\EntityFramework.xml
+C:\Users\markf\source\repos\TravelExpertEntity\TravelExpertEntities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\markf\source\repos\TravelExpertEntity\TravelExpertEntities\obj\Debug\TravelExpertEntities.csproj.CoreCompileInputs.cache
+C:\Users\markf\source\repos\TravelExpertEntity\TravelExpertEntities\obj\Debug\TravelExpertEntities.csproj.CopyComplete
+C:\Users\markf\source\repos\TravelExpertEntity\TravelExpertEntities\obj\Debug\TravelExpertEntities.dll
+C:\Users\markf\source\repos\TravelExpertEntity\TravelExpertEntities\obj\Debug\TravelExpertEntities.pdb
