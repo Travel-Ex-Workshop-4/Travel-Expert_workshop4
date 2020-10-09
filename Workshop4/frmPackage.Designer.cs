@@ -54,7 +54,11 @@
             this.btnPrev = new System.Windows.Forms.Button();
             this.prodNameComboBox = new System.Windows.Forms.ComboBox();
             this.supNameComboBox = new System.Windows.Forms.ComboBox();
+            this.suppliersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.travelExpertsDataSet = new Workshop4.TravelExpertsDataSet();
+            this.productsSuppliersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.products_SuppliersTableAdapter = new Workshop4.TravelExpertsDataSetTableAdapters.Products_SuppliersTableAdapter();
+            this.suppliersTableAdapter = new Workshop4.TravelExpertsDataSetTableAdapters.SuppliersTableAdapter();
             pkgAgencyCommissionLabel = new System.Windows.Forms.Label();
             pkgBasePriceLabel = new System.Windows.Forms.Label();
             pkgDescLabel = new System.Windows.Forms.Label();
@@ -71,7 +75,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.packageBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.packageBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.suppliersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.travelExpertsDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productsSuppliersBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // pkgAgencyCommissionLabel
@@ -336,6 +342,7 @@
             // prodNameComboBox
             // 
             this.prodNameComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "ProdName", true));
+            this.prodNameComboBox.DataSource = this.productBindingSource;
             this.prodNameComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.prodNameComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.prodNameComboBox.FormattingEnabled = true;
@@ -348,6 +355,9 @@
             // supNameComboBox
             // 
             this.supNameComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.supplierBindingSource, "SupName", true));
+            this.supNameComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.suppliersBindingSource, "SupName", true));
+            this.supNameComboBox.DataSource = this.suppliersBindingSource;
+            this.supNameComboBox.DisplayMember = "SupName";
             this.supNameComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.supNameComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.supNameComboBox.FormattingEnabled = true;
@@ -355,12 +365,31 @@
             this.supNameComboBox.Name = "supNameComboBox";
             this.supNameComboBox.Size = new System.Drawing.Size(161, 24);
             this.supNameComboBox.TabIndex = 41;
+            this.supNameComboBox.ValueMember = "SupName";
             this.supNameComboBox.SelectedIndexChanged += new System.EventHandler(this.supNameComboBox_SelectedIndexChanged);
+            // 
+            // suppliersBindingSource
+            // 
+            this.suppliersBindingSource.DataMember = "Suppliers";
+            this.suppliersBindingSource.DataSource = this.travelExpertsDataSet;
             // 
             // travelExpertsDataSet
             // 
             this.travelExpertsDataSet.DataSetName = "TravelExpertsDataSet";
             this.travelExpertsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // productsSuppliersBindingSource
+            // 
+            this.productsSuppliersBindingSource.DataMember = "Products_Suppliers";
+            this.productsSuppliersBindingSource.DataSource = this.travelExpertsDataSet;
+            // 
+            // products_SuppliersTableAdapter
+            // 
+            this.products_SuppliersTableAdapter.ClearBeforeFill = true;
+            // 
+            // suppliersTableAdapter
+            // 
+            this.suppliersTableAdapter.ClearBeforeFill = true;
             // 
             // frmPackage
             // 
@@ -405,7 +434,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.packageBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.packageBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.suppliersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.travelExpertsDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productsSuppliersBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -439,5 +470,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private TravelExpertsDataSet travelExpertsDataSet;
+        private System.Windows.Forms.BindingSource productsSuppliersBindingSource;
+        private TravelExpertsDataSetTableAdapters.Products_SuppliersTableAdapter products_SuppliersTableAdapter;
+        private System.Windows.Forms.BindingSource suppliersBindingSource;
+        private TravelExpertsDataSetTableAdapters.SuppliersTableAdapter suppliersTableAdapter;
     }
 }

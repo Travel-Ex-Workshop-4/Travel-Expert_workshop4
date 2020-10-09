@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 /*
     * Term 2 Threaded Project 
-    * Author : Muna
+    * Author : Muna, Branden
     * Date : October 2,2020
     * Course Name : Threaded Project for OOSD
     * Purpose: This is a collection of methods to manage the Supplier class objects
@@ -22,7 +22,7 @@ namespace DataBaseAcess
 {
     public class SupplierDB
     {
-        // This method returns a list of Supplier objects from the database. (T. Leslie)
+        // This method returns a list of Supplier objects from the database. 
         public static List<Supplier> GetSuppliers()
         {
             List<Supplier> suppliers = new List<Supplier>();
@@ -67,7 +67,7 @@ namespace DataBaseAcess
             return suppliers;
         }
 
-        // Method to return a Supplier object for the given supplierid. (T. Leslie)
+        // Method to return a Supplier object for the given supplierid. 
         public static Supplier GetSupplier(int supplierid)
         {
             Supplier supplier = null;
@@ -110,7 +110,7 @@ namespace DataBaseAcess
             return supplier;
         }
 
-        // Method returns the index of a given Supplier object in a list of objects. (T. Leslie)
+        // Method returns the index of a given Supplier object in a list of objects. 
         public static int FindIndexofId(List<Supplier> suppliers, int id)
         {
             int tmpIndex = 0;
@@ -124,7 +124,7 @@ namespace DataBaseAcess
 
 
         // Method to add a new product to the Suppliers table of Travel Experts
-        // and return the auto-generated SupplierId. (T. Leslie)
+        // and return the auto-generated SupplierId. 
         public static bool AddSupplier(Supplier supplier)
         {
             bool success = true;
@@ -196,7 +196,7 @@ namespace DataBaseAcess
             return success;
         }
 
-        // Method to delete the passed supplier from the database. (T. Leslie)
+        // Method to delete the passed supplier from the database. 
         public static bool DeleteSupplier(Supplier supplier)
         {
             bool success = true;
@@ -236,7 +236,7 @@ namespace DataBaseAcess
             return success;
         }
 
-        // Method to check if passed supplier is in the List of SupplierContacts. (T. Leslie)
+        // Method to check if passed supplier is in the List of SupplierContacts. 
         private static bool IsInSupplierContacts(Supplier supplier)
         {
             bool result = false;
@@ -252,7 +252,7 @@ namespace DataBaseAcess
             return result;
         }
 
-        // Method to return a List of SupplierContacts. (T. Leslie)
+        // Method to return a List of SupplierContacts. 
         private static List<SupplierContact> GetSupplierContacts()
         {
             List<SupplierContact> suppliercontacts = new List<SupplierContact>();
@@ -297,7 +297,7 @@ namespace DataBaseAcess
         }
 
 
-        // Method to delete a SupplierContact record for a given supplier. (T. Leslie)
+        // Method to delete a SupplierContact record for a given supplier. 
         public static bool DeleteSupplierContacts(Supplier supplier)
         {
             bool success = true;
@@ -342,7 +342,7 @@ namespace DataBaseAcess
             return result;
         }
 
-        // Method to find the maximum SupplierId in a List of suppliers. (T. Leslie)
+        // Method to find the maximum SupplierId in a List of suppliers. 
         public static int FindMaxSupplierId(List<Supplier> suppliers)
         {
             int maxId = 0;

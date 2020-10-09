@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 /// <summary>
-/// Author: Muna
+/// Author: Muna, Branden
 /// Purpose: Agent Info
 /// </summary>
 

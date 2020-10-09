@@ -12,7 +12,7 @@ namespace DataBaseAcess
 
     /*
     * Term 2 Threaded Project 
-    * Author : Muna
+    * Author : Muna, Branden
     * Date : October 2,2020
     * Course Name : Threaded Project for OOSD
     * Purpose :to get the packageid from sql and 

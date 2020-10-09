@@ -1,6 +1,6 @@
 ﻿/*
     * Term 2 Threaded Project 
-    * Author : Muna
+    * Author : Muna, Branden
     * Date : October 2,2020
     * Course Name : Threaded Project for OOSD
     *This is a collection of methods that manages Product entities and interaction
@@ -22,7 +22,7 @@ namespace DataBaseAcess
 {
     public class ProductDB
     {
-        // This method will return a list of Product objects from the database. (T. Leslie)
+        // This method will return a list of Product objects from the database. Muna, Branden
         public static List<Product> GetProducts()
         {
             List<Product> products = new List<Product>();
@@ -62,7 +62,7 @@ namespace DataBaseAcess
         }
 
 
-        // This method will return the maximum ProductId within a List of products. (T. Leslie)
+        // This method will return the maximum ProductId within a List of products.
         public static int FindMaxProductId(List<Product> products)
         {
             int tempMax = 0;
@@ -74,7 +74,7 @@ namespace DataBaseAcess
             return tempMax;
         }
 
-        // This method will return the index for a given id within a list of Products. (T. Leslie)
+        // This method will return the index for a given id within a list of Products. 
         public static int FindIndexofId(List<Product> products, int id)
         {
             int tmpIndex = 0;
@@ -86,7 +86,7 @@ namespace DataBaseAcess
             return tmpIndex;
         }
 
-        // Method to return a Product object for the given ProductId. (T. Leslie)
+        // Method to return a Product object for the given ProductId. 
         public static Product GetProduct(int productid)
         {
             Product product = null;
@@ -127,7 +127,7 @@ namespace DataBaseAcess
         }
 
         // Method to add a new product to the Products table of Travel Experts
-        // and return the auto-generated ProductId. (T. Leslie)
+        // and return the auto-generated ProductId.
         public static int AddProduct(Product product)
         {
             int productid = 0;
@@ -198,7 +198,7 @@ namespace DataBaseAcess
             return success;
         }
 
-        // This method will delete the passed Product from the TravelExperts database. (T. Leslie)
+        // This method will delete the passed Product from the TravelExperts database.
         public static bool DeleteProduct(Product product)
         {
             bool success = true;
@@ -230,7 +230,7 @@ namespace DataBaseAcess
             return success;
         }
 
-        // This method returns true if the passed Product object exists in this Product table. (T. Leslie)
+        // This method returns true if the passed Product object exists in this Product table.
         public static bool IsInProductsSuppliers(Product product)
         {
             bool result = false;

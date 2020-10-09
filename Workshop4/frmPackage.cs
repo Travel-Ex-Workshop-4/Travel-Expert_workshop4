@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 /// <summary>
-/// Author: Muna
+/// Author: Muna, Branden
 /// Purpose: Get the Products 
 /// </summary>
 namespace Workshop4 {
@@ -40,6 +40,10 @@ namespace Workshop4 {
         }
 
         private void frmPackage_Load(object sender, EventArgs e) {
+            // TODO: This line of code loads data into the 'travelExpertsDataSet.Suppliers' table. You can move, or remove it, as needed.
+            this.suppliersTableAdapter.Fill(this.travelExpertsDataSet.Suppliers);
+            // TODO: This line of code loads data into the 'travelExpertsDataSet.Products_Suppliers' table. You can move, or remove it, as needed.
+            this.products_SuppliersTableAdapter.Fill(this.travelExpertsDataSet.Products_Suppliers);
             // TODO: This line of code loads data into the 'travelExpertsDataSet.Products_Suppliers' table. You can move, or remove it, as needed.
             //this.products_SuppliersTableAdapter.Fill(this.travelExpertsDataSet.Products_Suppliers);
             // Display a list of Package ids to the package Id combobox
@@ -92,7 +96,7 @@ namespace Workshop4 {
                                 select new ProductSupplierViewModels {
                                     ProductSupplierId = ps.ProductSupplierId,
                                     ProdName = p.ProdName,
-                                    SuppName = s.SupName
+                                    SupName = s.SupName 
                                 }).ToList();
 
                 // Bind List to data grid
@@ -381,7 +385,7 @@ namespace Workshop4 {
                                 {
                                     ProductSupplierId = ps.ProductSupplierId,
                                     ProdName = p.ProdName,
-                                    SuppName = s.SupName
+                                    SupName = s.SupName
                                 }).ToList();
 
                 productSupplierViewModelDataGridView.DataSource = productSupplierViewModels;
@@ -402,7 +406,7 @@ namespace Workshop4 {
                                 {
                                     ProductSupplierId = ps.ProductSupplierId,
                                     ProdName = p.ProdName,
-                                    SuppName = s.SupName
+                                    SupName = s.SupName
                                 }).ToList();
 
                 productSupplierViewModelDataGridView.DataSource = null;
@@ -462,7 +466,7 @@ namespace Workshop4 {
                                 {
                                     ProductSupplierId = ps.ProductSupplierId,
                                     ProdName = p.ProdName,
-                                    SuppName = s.SupName
+                                    SupName = s.SupName
                                 }).ToList();
 
                 productSupplierViewModelDataGridView.DataSource = null;
@@ -485,7 +489,7 @@ namespace Workshop4 {
                                 {
                                     ProductSupplierId = ps.ProductSupplierId,
                                     ProdName = p.ProdName,
-                                    SuppName = s.SupName
+                                    SupName = s.SupName
                                 }).ToList();
 
                 productSupplierViewModelDataGridView.DataSource = null;
@@ -499,6 +503,6 @@ namespace Workshop4 {
     {
         public int ProductSupplierId { get; set; }
         public string ProdName { get; set; }
-        public string SuppName { get; set; }
+        public string SupName { get; set; }
     }
 }

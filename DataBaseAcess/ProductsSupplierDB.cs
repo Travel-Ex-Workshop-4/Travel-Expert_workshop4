@@ -1,6 +1,6 @@
 ﻿/*
     * Term 2 Threaded Project 
-    * Author : Muna
+    * Author : Muna, Branden
     * Date : October 2,2020
     * Course Name : Threaded Project for OOSD
     * Purpose: This is a collection of methods to manage the ProductSupplier entities
@@ -372,7 +372,7 @@ namespace DataBaseAcess
             return deleteSuccess;
         }
 
-        // May need a cascade delete method
+        
     }
 }
 

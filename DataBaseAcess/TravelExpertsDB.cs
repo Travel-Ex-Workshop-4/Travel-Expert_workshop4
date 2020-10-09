@@ -9,7 +9,7 @@ namespace DataBaseAcess
 {
     /*
     * Term 2 Threaded Project 
-    * Author : Muna. Branden, Sean
+    * Author : Muna. Branden,
     * Date : October 5,2020
     * Course Name : Threaded Project for OOSD
     * Purpose : connect to the database
